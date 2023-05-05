@@ -1,0 +1,79 @@
+:root {
+    --foreground-color: #000;
+    --background-color: #a278c4;
+    --accent-color: #00cf9b;
+    --accent-color-dark: #00a87d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oxanium", cursive;
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+}
+
+main {
+    margin: 1rem auto;
+    max-width: 40rem;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#pfp {
+    width: 8rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+#pfp > picture > img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+#pfp > figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    list-style: none;
+    gap: 1rem;
+}
+
+#links > li {
+    width: 100%;
+    color: var(--foreground-color);
+    background-color: var(--accent-color);
+    text-align: center;
+    box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.125);
+    font-weight: 500;
+}
+
+#links > li:hover {
+    background-color: var(--accent-color-dark);
+}
+
+#links > li > a {
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+}
